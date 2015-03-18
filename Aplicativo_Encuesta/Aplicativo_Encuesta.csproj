@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1DE2BEF-3349-44F7-8D2B-8DF755D5A0C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aplicativo_Encuesta</RootNamespace>
+    <AssemblyName>Aplicativo_Encuesta</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clCiudad.cs" />
+    <Compile Include="clEncuesta.cs" />
+    <Compile Include="clParqueadero.cs" />
+    <Compile Include="clSMCiudad.cs" />
+    <Compile Include="clSMestado.cs" />
+    <Compile Include="clSMpais.cs" />
+    <Compile Include="clTransito.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frminformacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminformacion.Designer.cs">
+      <DependentUpon>frminformacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpadre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpadre.Designer.cs">
+      <DependentUpon>frmpadre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParqueadero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParqueadero.Designer.cs">
+      <DependentUpon>frmParqueadero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmreporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmreporte.Designer.cs">
+      <DependentUpon>frmreporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalarioMinimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalarioMinimo.Designer.cs">
+      <DependentUpon>FrmSalarioMinimo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmseccion1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmseccion1.Designer.cs">
+      <DependentUpon>frmseccion1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmseccion2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmseccion2.Designer.cs">
+      <DependentUpon>frmseccion2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmseccion3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmseccion3.Designer.cs">
+      <DependentUpon>frmseccion3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmseccion4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmseccion4.Designer.cs">
+      <DependentUpon>frmseccion4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransito.Designer.cs">
+      <DependentUpon>frmTransito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminformacion.resx">
+      <DependentUpon>frminformacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpadre.resx">
+      <DependentUpon>frmpadre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParqueadero.resx">
+      <DependentUpon>frmParqueadero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmreporte.resx">
+      <DependentUpon>frmreporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalarioMinimo.resx">
+      <DependentUpon>FrmSalarioMinimo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmseccion1.resx">
+      <DependentUpon>frmseccion1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmseccion2.resx">
+      <DependentUpon>frmseccion2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmseccion3.resx">
+      <DependentUpon>frmseccion3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmseccion4.resx">
+      <DependentUpon>frmseccion4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransito.resx">
+      <DependentUpon>frmTransito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

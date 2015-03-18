@@ -1,0 +1,9 @@
+Fecha de entrada: 12/03/2015 0:09:27
+Tipo de vehiculo: 
+Nombre: wqwq
+Indetificación: 111
+Placa: 123
+Fecha salida: 19/03/2015 12:09:27
+Numero de horas: 167,999859658639
+Tarifa: 2500
+Total a pagar: 419999,649146597
